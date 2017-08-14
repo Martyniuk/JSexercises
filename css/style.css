@@ -1,0 +1,12 @@
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+}
+
+.divider {
+    margin-bottom: 10px;
+}
