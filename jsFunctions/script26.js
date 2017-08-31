@@ -4,4 +4,5 @@ string without repeating characters.  */
 function func(str) {
     // stringas
     // haven't find simple solution will come back to it in future
+    
 }
