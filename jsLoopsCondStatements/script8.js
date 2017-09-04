@@ -10,6 +10,8 @@ Write a JavaScript program to find and print the first 5 happy numbers.
   (pow(i, 2) pow(i, 2) pow(i, 2))
 */
 
+
+/*
 function func() {
     let arr = new Array(100),
         tmpArr = []; // array of odd numbers
@@ -27,5 +29,17 @@ function func() {
     }
     console.log(tmpArr);
 }
+*/
+String.prototype.reduce = [].reduce;
+Array.prototype.has= function has (n) { return this.indexOf(n) >= 0 };
+Array.prototype.times= function (f,i) { for (i= this[0] ; i<=this[1] ; i++) f(i) };
 
-func();
+function happy (n) {
+  var past= [];
+  while (1) {
+    if ((n= n.toString().reduce(function(n,v){ return n+v*v },0)) === 1) return 1;
+    if (past.has(n)) return 0; else past.push(n);
+}}
+
+[1,1000].times(function(n) { happy(n) && console.log(n) });
+// func();
