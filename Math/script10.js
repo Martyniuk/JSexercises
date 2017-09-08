@@ -1,13 +1,7 @@
 //Write a JavaScript function to get the least common multiple (LCM) of two numbers.
 
 function lcm(a, b) {
-    let arr = [];
-
-    for (var i = a; i <= b; i++) {
-        arr.push(i);
-    }
-
-    console.log(arr);
+   
 }
 
 
